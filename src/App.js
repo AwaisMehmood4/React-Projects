@@ -6,11 +6,8 @@ import {Routes, Route} from 'react-router-dom';
 import Navigation from './Routes/Navigation/Navigation.component';
 import Authentication from './Routes/Authentication/Authentication.component';
 
-const Shop = () => {
-  return(
-    <h1>I am the shop page</h1>
-  )
-}
+import Shop from './Routes/shop/shop.component';
+
 
 
 const App = () => {

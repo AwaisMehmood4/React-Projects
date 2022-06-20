@@ -9,6 +9,7 @@ import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth, signInA
 import FormInput from "../form-input/form-input.component";
 import { async } from "@firebase/util";
 
+
 const defaultFormFields = {
     email: '',
     password: '',
@@ -20,6 +21,7 @@ const defaultFormFields = {
 
     const { email, password} = formFields;
 
+
     console.log(formFields);
 
     const resetFormFields = () => {
@@ -27,8 +29,7 @@ const defaultFormFields = {
     }
 
     const signInWithGoogle = async () => {
-        const {user} = await signInWithGooglePoopup();
-        await createUserDocumentFromAuth(user);
+        await signInWithGooglePoopup();
     }
 
     const handleSubmit = async (event) => {
@@ -37,7 +38,7 @@ const defaultFormFields = {
         
 
         try{
-            const response = await signInAuthUserWithEmailAndPassword(email,password);
+            const user = await signInAuthUserWithEmailAndPassword(email,password);
             
             resetFormFields();
         }
