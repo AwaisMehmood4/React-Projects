@@ -1,0 +1,15 @@
+.Header{
+    background: radial-gradient(50% 50% at 50% 50%, #084345 0%, #116164 0.01%, #223D3E 100%);
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header h1 {
+    font-size: 32px;
+    font-weight: 24px;
+    padding: 20px 0;
+    color: white;
+
+}

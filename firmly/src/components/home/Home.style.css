@@ -1,0 +1,16 @@
+.home {
+    background-image: url('../../assets/Group 18381.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
