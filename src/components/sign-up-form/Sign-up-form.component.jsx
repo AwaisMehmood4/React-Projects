@@ -2,7 +2,7 @@ import { useState,useContext } from "react";
 
 import './sign-up-form.style.scss';
 
-import Button from "../button/button.component";
+import Button , {BUTTON_TYPE_CLASSES} from "../button/button.component";
 
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../utils/firebase/firebase.utils";
 
@@ -67,7 +67,7 @@ const SignUpForm = () => {
     return(
         <div className="sign-up-container">
             <h2>Don't have an account?</h2>
-            <p>Sign Up with your Email and Password</p>
+            <p>Sign Up with your Email </p>
             <form onSubmit={handleSubmit}>
                 <FormInput label='Display Name' type='text' required onChange={handleChange} name='displayName' value={displayName}/>
                 
